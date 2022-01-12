@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  body{ 
+      font-size: 15pt;
+      font-family: 'Times New Roman', Times, serif;
+  }
+
+  .title {
+    text-align: left;
+  }
+
+  .subheading {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .form-container {
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .return {
+    background-color: grey;
+    text-decoration: none;
+    color: white;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+  }
+
+  p {text-align: center;}
+
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Medication</title>
+</head>
+
+<body>
+  <h4 class="title">Columbia Student Clinic</h4> 
+  <h4 class="subheading">Please complete the form below to add a new medication to the system.</h4>
+
+
+  <div class="form-container">
+    <form method="POST" action="/medication_add">
+        <p>Medication Name: <input type="text" name="p_name"></p>
+        <p>Doctor License Number: <input type="text" name="license_num"></p>
+        <p>Doctor ID: <input type="text" name="doc_id"></p>
+        <p>Pharmacy Address: <input type="text" name="pharmacy_addr"></p>
+        <p>Refills: <input type="text" name="refills_num"></p>
+        <p>Medication Type: <input type="text" name="type"></p>
+        <p>Prescription? (True or False): <input type="text" name="is_prescription"></p>
+        <p><input type="submit" value="Submit"></p>
+    </form>
+  </div>
+
+</body>
+<a href="/clinic_portal" class="return">Return to Clinic Portal</a>
+<a href="/" class="return">Return to Home Page</a>
+
+
+</html>

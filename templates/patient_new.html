@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <style>
+        .form-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .subheading {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .return {
+            background-color: grey;
+            text-decoration: none;
+            color: white;
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>New Patient</title>
+    </head>
+
+    <body>
+        <a href="/patient_portal" class="return">Return to Patient Portal</a>
+        <br>
+
+        <p class="subheading">Please fill out the form below to register as a new patient.</p>
+        <div class="form-container">
+            <form method="POST" action="/patient_portal/new_patient">
+                <p>Name (required): <input type="text" name="name"></p>
+                <br>
+                <p>DOB [YYYY-MM-DD] (required): <input type="text" name="dob"></p>
+                <br>
+                <p>Insurance ID: <input type="text" name="insurance"></p>
+                <br>
+                <p>Medical History: <input type="text" name="medical_history"></p>
+                <br>
+                <input type="submit" value="Create">
+            </form>
+        </div>
+
+        <a href="/" class="return">Return to Home Page</a>
+    </body>
+</html>

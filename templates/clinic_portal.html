@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+
+  .title {
+    text-align: left;
+  }
+
+  .label {
+    text-align: center;
+    background-color: grey;
+    padding: 25px;
+  }
+
+  .scheduling-container {
+    display: flex;
+  }
+
+  .dp-container {
+    display: flex;
+  }
+
+  .tl-container {
+    display: flex;
+  }
+
+  .child1 {
+    flex: 1;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .child2 {
+    flex: 1;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .child3 {
+    flex: 1;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .child2:first-child {
+    margin-right: 20px;
+  }
+
+  .child1:first-child {
+    margin-right: 20px;
+  }
+
+  .child3:first-child {
+    margin-right: 20px;
+  }
+
+  .scheduling-container .child2 #b1 {
+    background-color: #B2C3CC;
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .dp-container .child1 #b1 {
+    background-color: #B2C3CC;
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .tl-container .child3 #b1 {
+    background-color: #B2C3CC;
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .return {
+    background-color: grey;
+    text-decoration: none;
+    color: white;
+    border: 1px solid black;
+    padding: 5px;
+  }
+
+</style>
+
+<body>
+  <h3 class="title">Columbia Student Clinic</h3>
+
+  <br>
+  <p class="label 1">Patient and Doctor Info</p>
+  <div class="dp-container">
+    <div class="child1 dp">
+      <a href="clinic_portal/patients" id="b1" class="button">Patient Files</a>
+    </div>
+    <div class="child1 dp">
+      <a href="clinic_portal/doctors" id="b1" class="button">Doctor Files</a>
+    </div>
+    <div class="child1 dp">
+      <a href="clinic_portal/pcps" id="b1" class="button">PCP Files</a>
+    </div>
+    <div class="child1 dp">
+      <a href="clinic_portal/medications" id="b1" class="button">Patient Medications</a>
+    </div>
+  </div>
+
+  <br>
+  <div class="div2">
+    <p class="label 2">Scheduling Info</p>
+    <div class="scheduling-container">
+      <div class="child2 schedule">
+        <a href="clinic_portal/schedule" id="b1" class="button">Clinic Schedule</a>
+      </div>
+      <div class="child2 timeslots">
+        <a href="clinic_portal/timeslots" id="b1" class="button">All Timeslots</a>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <div class="div3">
+    <p class="label 3">Testing and Lab Info</p>
+    <div class="tl-container">
+      <div class="child3 testing">
+        <a href="clinic_portal/testing" id="b1" class="button">Testing</a>
+      </div>
+      <div class="child3 labs">
+        <a href="clinic_portal/labs" id="b1" class="button">Patient Labs</a>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <a href="/clinic_portal/logins" class="return">Clinic Portal Logins</a>
+  <br>
+  <br>
+  <br>
+  <a href="/" class="return">Return to Home Page</a>
+
+</body>
+</html>

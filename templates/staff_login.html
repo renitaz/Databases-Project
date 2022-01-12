@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  body{ 
+      font-size: 15pt;
+      font-family: arial;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .subheading {
+    text-align: center;
+    padding: 2%;
+  }
+
+  .form-container {
+    display: flex;
+    padding-top: 10%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .return {
+    background-color: grey;
+    text-decoration: none;
+    color: white;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+  }
+
+  p {text-align: center;}
+
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Staff Login</title>
+</head>
+
+<body>
+  <h1 class="title">Welcome to the Columbia Student Clinic</h1> 
+  <h4 class="subheading">All clinic staff members must login with their staff ID in order to access files.</h2>
+
+  <div class="form-container">
+    <form method="POST" action="/doctor_login">
+        <p>Staff ID (required): <input type="text" name="login_id"> <input type="submit" value="Login"></p>
+    </form>
+  </div>
+
+
+</body>
+<br>
+<br>
+<br>
+
+<p><a href="/" class="return">Return to Home Page</a></p>
+
+</html>

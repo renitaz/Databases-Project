@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  body{ 
+      font-size: 15pt;
+      font-family: arial;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .subheading {
+    text-align: center;
+  }
+
+  .buttons-container {
+    display: flex;
+    padding-top: 10%;
+  }
+
+  .child {
+    flex: 1;
+    text-align: center;
+  }
+
+  .child:first-child {
+    margin-right: 20px;
+  }
+
+  .buttons-container .child .b1 {
+    background-color: #B2C3CC;
+    border: none;
+    color: white;
+    padding: 10% 10%;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .home-button {
+    background-color: #B2C3CC;
+    border: none;
+    color: white;
+    padding: 10% 10%;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  p {text-align: center;}
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Columbia Student Clinic</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+  <h1 class="title">Patient Portal</h1> 
+  <h2 class="subheading">Are you a returning patient or a new patient?</h2>
+
+
+  <div class="buttons-container">
+    <div class="child returning">
+      <a href="patient_portal/returning_patient" class="b1" class="button">Returning Patient</a>
+    </div>
+    <div class="child new">
+      <a href="patient_portal/new_patient" class="b1" class="button">New Patient</a>
+    </div>
+  </div>
+</body>
+
+<br>
+<br>
+<br>
+<br>
+
+<div class="home-button">
+  <p><a href="/" class="button">Home Page</a></p>
+</div>
+</html>

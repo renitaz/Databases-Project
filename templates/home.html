@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  body{ 
+      font-size: 15pt;
+      font-family: arial;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .subheading {
+    text-align: center;
+  }
+
+  .buttons-container {
+    display: flex;
+    padding-top: 10%;
+  }
+
+  .child {
+    flex: 1;
+    text-align: center;
+  }
+
+  .child:first-child {
+    margin-right: 20px;
+  }
+
+  .buttons-container .child .b1 {
+    background-color: #B2C3CC;
+    border: none;
+    color: white;
+    padding: 10% 10%;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+  }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Columbia Student Clinic</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+  <h1 class="title">Welcome to the Columbia Student Clinic</h1> 
+  <h2 class="subheading">Are you a patient or a medical staff member?</h2>
+
+
+  <div class="buttons-container">
+    <div class="child patient">
+      <a href="/patient_portal" class="b1" class="button">Patient</a>
+    </div>
+    <div class="child staff">
+      <a href="/doctor_login" class="b1" class="button">Medical Staff</a>
+    </div>
+  </div>
+
+
+</body>
+
+
+</html>

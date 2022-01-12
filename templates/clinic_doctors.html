@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+
+table, td {
+  border: 1px solid black; 
+  padding: 10px; 
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #B2C3CC;
+  color: white; 
+  border: 1px solid black; 
+  height: 40px; 
+  padding: 10px; 
+}
+
+
+tr:hover {background-color: #f5f5f5;}
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+.return {
+    background-color: grey;
+    text-decoration: none;
+    color: white;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+
+</style>
+
+<p>Doctor Files</p>
+
+<table>
+    <th>Doctor ID</th>
+    <th>Doctor Name</th>
+    <th>License Number</th>
+    <th>Job Title</th>
+    <th>Date Hired</th>
+    <th>Degrees</th>
+    <th>Expertise</th>
+
+    <tbody>
+        {% for n in data %}
+        <tr>
+            <td>{{n[0]}}</td>
+            <td>{{n[6]}}</td>
+            <td>{{n[1]}}</td>
+            <td>{{n[2]}}</td>
+            <td>{{n[3]}}</td>
+            <td>{{n[4]}}</td>
+            <td>{{n[5]}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<br>
+<a href="/doctor_add" class="return">Add a Doctor</a>
+<br>
+<br>
+<a href="/clinic_portal" class="return">Clinic Portal</a>
+
+
+</html>
